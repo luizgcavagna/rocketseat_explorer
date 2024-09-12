@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crie seu evento</title>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700&amp;family=Poppins&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Crie e compartilhe seu evento.</h1>
+    <p>O primeiro passo, é preencher esse formulário de inscrição</p>
+  </header>
+  <main>
+    <form action="">
+      <fieldset>
+        <legend>Informações do Evento</legend>
+        <label for="event-title">
+          Titulo do evento <span>(minimo 8 caracteres)</span>
+        </label>
+        <input type="text" name="event-title" id="event-title">
+        <label for="event-link">
+          Link do evento <span>(comece com https://)</span>
+        </label>
+        <input type="text" name="event-link" id="event-link">
+        <label for="event-whatsapp">
+          Whatsapp para contato <span>(somente numeros)</span>
+        </label>
+        <input type="number" name="event-whatsapp" id="event-whatsapp">
+        <label for="event-info">
+          Informações extras
+        </label>
+        <textarea name="event-info" id="event-info"></textarea>
+        <label for="event-category">
+          Categoria
+        </label>
+        <select name="event-category" id="event-category">
+          <option value="live">AO VIVO</option>
+          <option value="podcast">Podcast</option>
+          <option value="mentorship">Mentoria</option>
+        </select>
+        <label for="">
+          E-mail do administrador <span>(digite um email valido)</span>
+        </label>
+        <input type="email" name="" id="">
+        <label for="">
+          Senha de acesso para os participantes <span>(minimo 8 caracteres)</span>
+        </label>
+        <input type="password" name="" id="">
+      </fieldset>
+    </form>
+  </main>
+</body>
+</html>
