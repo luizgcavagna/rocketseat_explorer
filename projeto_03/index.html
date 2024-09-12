@@ -15,13 +15,13 @@
     <p>O primeiro passo, é preencher esse formulário de inscrição</p>
   </header>
   <main>
-    <form action="">
+    <form id="my-form">
       <fieldset>
         <legend>Informações do Evento</legend>
         <label for="event-title">
           Titulo do evento <span>(minimo 8 caracteres)</span>
         </label>
-        <input type="text" name="event-title" id="event-title">
+        <input type="text" name="event-title" id="event-title" required minlength="8">
         <label for="event-link">
           Link do evento <span>(comece com https://)</span>
         </label>
@@ -42,16 +42,49 @@
           <option value="podcast">Podcast</option>
           <option value="mentorship">Mentoria</option>
         </select>
-        <label for="">
+      </fieldset>
+      <fieldset>
+        <legend>Privacidade</legend>
+        <label for="event-email">
           E-mail do administrador <span>(digite um email valido)</span>
         </label>
-        <input type="email" name="" id="">
-        <label for="">
+        <input type="email" name="event-email" id="event-email">
+        <label for="event-password">
           Senha de acesso para os participantes <span>(minimo 8 caracteres)</span>
         </label>
-        <input type="password" name="" id="">
+        <input type="password" name="event-password" id="event-password" minlength="8">
+        <div class="checkbox">
+          <input type="checkbox" name="event-private" id="event-private">
+          <label for="event-private">Evento privado</label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Dia e hora</legend>
+        <div class="col-3">
+          <div class="col">
+            <label for="event-date">
+              Data
+            </label>
+            <input type="date" name="event-date" id="event-date">
+          </div>
+          <div class="col">
+            <label for="event-begin">
+              Das
+            </label>
+            <input type="time" name="event-begin" id="event-begin">
+          </div>
+          <div class="col">
+            <label for="event-end">
+              Ate
+            </label>
+            <input type="time" name="event-end" id="event-end">
+          </div>
+        </div>
       </fieldset>
     </form>
+    <footer>
+      <button form="my-form" type="submit">Salvar evento</button>
+    </footer>
   </main>
 </body>
 </html>
