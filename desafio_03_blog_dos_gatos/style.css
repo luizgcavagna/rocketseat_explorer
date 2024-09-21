@@ -47,15 +47,14 @@ header form {
 .input-wrapper input {
   width: 100%;
   padding: 1.2rem;
-  background-color: var(--color-base-white);
+  background-color: rgb(255 255 255 / 0.2);
   border: 0;
   border-radius: .6rem;
   font-size: 1.6rem;
   font-weight: 600;
-  opacity: .6;
+  color: var(--color-base-white);
 }
 .input-wrapper input::placeholder {
-  opacity: 0.56;
   color: var(--color-base-white);
 }
 .avatar {
@@ -125,6 +124,7 @@ footer p {
   #app > .container {
     display: flex;
     grid-area: main;
+    justify-content: space-between;
   }
   header {
     grid-area: header;
@@ -138,8 +138,7 @@ footer p {
   #app {
     display: grid;
     grid-gap: 20px;
-    grid-template-columns: 3fr 1fr;
-     grid-template-areas: 
+    grid-template-areas: 
     "header  header"
     "main main"
     "footer  footer";
