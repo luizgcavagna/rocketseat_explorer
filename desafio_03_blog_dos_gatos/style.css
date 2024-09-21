@@ -124,15 +124,12 @@ footer p {
   }
   #app > .container {
     display: flex;
+    grid-area: main;
   }
   header {
     grid-area: header;
   }
-  .container {
-    grid-area: main;
-  }
   aside {
-    grid-area: aside;
     width: 38.4rem;
   }
   footer {
