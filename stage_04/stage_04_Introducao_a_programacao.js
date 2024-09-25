@@ -114,10 +114,10 @@ else
   Substitua o "x" da mensagem, pelo número de tentativas
 
   let number = Number(prompt('Advinhe o número que estou pensando? Está entre 0 e 10'));
-  let numberOfChances = Math.round(Math.random() * 10);
+  let randomNumber = Math.round(Math.random() * 10);
   let attempts = 1;
 
-  while(number != numberOfChances){
+  while(number != randomNumber){
     number = Number(prompt('Erro, tente novamente: '));
     attempts++;
   }
