@@ -176,6 +176,9 @@ while(option != 3) {
       break;
     case 3:
       console.log('Isso e tudo pessoal');
+      break;
+    default:
+      console.log('Opcao invalida');
   }
 }
 
