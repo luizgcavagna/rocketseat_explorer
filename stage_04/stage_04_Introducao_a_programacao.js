@@ -183,4 +183,42 @@ while(option != 3) {
 }
 
 */
+/* 
+  Crie uma lista de pacientes
 
+  Cada paciente dentro da lista, deverá conter
+    nome
+    idade
+    peso
+    altura
+
+  Escreva uma lista contendo o nome dos pacientes
+
+let patients = [
+  {
+    name: 'Vo',
+    age: 93,
+    weight: 49,
+    height: 1.65
+  },
+  {
+    name: 'El',
+    age: 6,
+    weight: 30,
+    height: 1
+  },
+  {
+    name: 'Teta',
+    age: 29,
+    weight: 85,
+    height: 1.78
+  }
+];
+
+let patientName = [];
+
+for(let patient of patients)
+  patientName.push(patient.name);
+
+console.log(patientName.join(', '));
+*/
