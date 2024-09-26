@@ -222,3 +222,40 @@ for(let patient of patients)
 
 console.log(patientName.join(', '));
 */
+/* 
+  Dada uma lista de pacientes, descubra o IMC de cada paciente e imprima
+
+  "Paciente X possui o IMC de: Y"
+
+  Onde X é o nome do paciente e Y é o IMC desse paciente
+
+  Crie uma função para fazer o cálculo de IMC
+
+/ * peso / (altura * altura) * /
+let imc = (weight, height) => weight / (height * height)
+
+let patients = [
+  {
+    name: 'Vo',
+    age: 93,
+    weight: 49,
+    height: 1.65
+  },
+  {
+    name: 'El',
+    age: 6,
+    weight: 30,
+    height: 1
+  },
+  {
+    name: 'Teta',
+    age: 29,
+    weight: 85,
+    height: 1.78
+  }
+];
+
+for(let patient of patients){
+  console.log(`${patient.name} possui o IMC de: ${imc(patient.weight, patient.height).toFixed(2)}`);
+}
+*/
