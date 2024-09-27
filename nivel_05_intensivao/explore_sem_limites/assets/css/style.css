@@ -139,6 +139,12 @@ footer p {
   line-height: auto;
   color: var(--white);
 }
+.animate {
+  animation-duration: 0.5s;
+  animation-name: animate-fade;
+  animation-delay: 0.5s;
+  animation-fill-mode: backwards;
+}
 @media(min-width: 75rem) {
   .banner {
     padding-left: 11rem;
@@ -173,4 +179,8 @@ footer p {
   form {
     max-width: 50%;
   }
+}
+@keyframes animate-fade {
+  0% { opacity: 0; }
+100% { opacity: 1; }
 }
