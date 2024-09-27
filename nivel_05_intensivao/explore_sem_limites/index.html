@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore sem limites</title>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@600;700;900&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <main>
+    <section class="banner">
+      <img
+        srcset="
+          assets/img/banner_mobile.png 320w,
+          assets/img/banner_desk.png 720w
+        "
+        sizes="(max-width: 1200px) 364px,
+                  720px"
+        src="assets/img/banner_desk.png"
+        alt="Um astronauta com os planetas" />
+      <div class="banner-text">
+        <h1>Explore sem limites</h1>
+        <p>Porque o aprendizado e continuo</p>
+        <img src="assets/img/scroll_down.png" alt="Scroll">
+      </div>
+    </section>
+    <section class="cards">
+      <div class="item">
+        <img 
+          srcset="
+            assets/img/lua_cheetos_mobile.jpg 81w,
+            assets/img/lua_cheetos.jpg 97w"
+          sizes="(max-width: 1200px) 81px,
+                97px"
+          src="assets/img/lua_cheetos.jpg" 
+          alt="Lua de cheetos"/>
+        <h3>Nao pare nunca</h3>
+        <p>Se voce deseja tttter sucesso nos estudos, e fundamental que voce adote uma mentalidade de "nao pare nunca". Estudar de forma consistente e continua e a chave para o progresso e a conquista de seus objetivos</p>
+      </div>
+      <div class="item">
+        <img 
+          srcset="
+            assets/img/lua_azul_mobile.jpg 81w,
+            assets/img/lua_azul.jpg 97w"
+          sizes="(max-width: 1200px) 81px,
+            97px"
+          src="assets/img/lua_azul.jpg" 
+          alt="Lua azul">
+        <h3>So volta</h3>
+        <p>Se voce parou ou perdeu o ritmo em alguma atividade ou projeto, saiba que nunca e tarde para recomecar. As vezes, as circunstancias podem mudar, ou podemos nos sentir desmotivados ou sobrecarregados.</p>
+      </div>
+      <div class="item">
+        <img
+          srcset="
+            assets/img/lua_rosa_mobile.jpg 81w,
+            assets/img/lua_rosa.jpg 97w"
+          sizes="(max-width: 1200px) 81px,
+                97px"
+          src="assets/img/lua_rosa.jpg"  
+          alt="Lua rosa">
+        <h3>Siga seu ritmo</h3>
+        <p>Avancar pouco a pouco mantem progresso constante em objetivos, evitandor parar ou desistir. Mesmo pequenos passos nos aproximam do destino e motivam a conttinuidade. Nao substime o poder de cada acao rumo ao objetivo final.</p>
+      </div>
+    </section>
+    <section class="form">
+      <h2>Entre em contato</h2>
+      <form>
+        <div class="form-data">
+          <label for="form-name">Seu nome</label>
+          <input type="text" id="form-name" name="form-name" placeholder="Seu nome">
+        </div>
+        <div class="form-data">
+          <label for="form-email">Email</label>
+          <input type="email" id="form-email" name="form-email" placeholder="Email">
+        </div>
+        <div class="form-data">
+          <label for="form-message">Digite sua mensagem aqui...</label>
+          <textarea name="form-message" id="form-message" placeholder="Digite sua mensagem aqui.."></textarea>
+        </div>
+        <button>Enviar Mensagem</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>© 2023 - Rocketseat Explorer</p>
+  </footer>
+</body>
+</html>
