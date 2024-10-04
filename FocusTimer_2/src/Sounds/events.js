@@ -6,8 +6,18 @@ import * as el from './elements.js';
 export function registerControls() {
   controls.addEventListener('click', (event) => {
     const action = event.target.dataset.action
-    console.log(event.srcElement == 'button');
-    event.target.classList.toggle('active');
+    const id = event.target.dataset.id;
+    
+    if(state.id == '')
+      state.id = id
+
+    //console.log(id);
+    if(state.id != id) {
+      document.getElementById(state.id).classList.remove('active');
+      state.id = id;
+    }
+    
+    //event.target.classList.toggle('active');
 
     if(typeof actions[action] != 'function')
       return;

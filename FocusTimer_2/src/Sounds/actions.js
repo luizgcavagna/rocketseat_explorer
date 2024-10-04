@@ -13,10 +13,14 @@ export function florest() {
 
   state.audio = sounds.florest;
 
-  if(state.isMute) 
+  if(state.isMute) {
+    document.getElementById(state.id).classList.add('active')
     audio.play();
-  else
+  }
+  else {
+    document.getElementById(state.id).classList.remove('active');
     audio.pause();
+  }
 
 }
 
@@ -32,9 +36,11 @@ export function rain() {
 
   state.audio = sounds.rain;
 
-  if(!state.isMute) 
+  if(state.isMute) {
+    document.getElementById(state.id).classList.add('active')
     audio.play();
-  else
+  }
+  else 
     audio.pause();
 
 }
@@ -51,10 +57,14 @@ export function cafeteria() {
 
   state.audio = sounds.cafeteria;
 
-  if(!state.isMute) 
+  if(state.isMute) {
+    document.getElementById(state.id).classList.add('active')
     audio.play();
-  else
+  }
+  else {
+    document.getElementById(state.id).classList.remove('active');
     audio.pause();
+  }
 
 }
 
@@ -70,9 +80,13 @@ export function fireplace() {
   
   state.audio = sounds.fireplace;
 
-  if(!state.isMute) 
+  if(state.isMute) {
+    document.getElementById(state.id).classList.add('active')
     audio.play();
-  else
+  }
+  else {
+    document.getElementById(state.id).classList.remove('active');
     audio.pause();
+  }
 
 }

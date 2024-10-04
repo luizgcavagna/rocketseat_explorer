@@ -1,4 +1,5 @@
 export default {
   isMute: true,
-  audio: ''
+  audio: '',
+  id: ''
 }
