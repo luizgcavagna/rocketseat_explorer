@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Qwitcher Grypen", cursive;
+  font-weight: 400;
+  background-color: #26355D;
+  color: #fff;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+a {
+  font-family: "Qwitcher Grypen", cursive;
+  color: #fff;
+  font-size: 69px;
+  text-decoration: none;
+}
+a + a {
+  margin-left: 30px;
+}
+a.active,
+a:hover {
+  color: #FF8F00;
+}
+.content {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  min-height: 80vh;
+  place-content: center;
+}
+.contentForm {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  min-height: 80vh;
+  align-content: center;
+}
+h1 {
+  font-size: 69px;
+}
+p {
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+.input + .input {
+  margin-top: 15px;
+}
+input,
+textarea {
+  width: 400px;
+  height: 40px;
+  border: 2px solid #FF8F00;
+  border-radius: 20px;
+  padding: 10px 15px;
+  color: #FF8F00;
+  font-family: "Qwitcher Grypen", cursive;
+  font-size: 40px;
+}
+textarea {
+  min-height: 100px;
+}
+form button {
+  background-color: #FF8F00;
+  font-family: "Qwitcher Grypen", cursive;
+  color: #fff;
+  padding: 5px 30px;
+  font-size: 40px;
+  border: none;
+  border-radius: 20px;
+  font-weight: 700;
+  margin-top: 15px;
+  cursor: pointer;
+}
+form button:hover {
+  background-color: #ff9100bb;
+}
