@@ -24,10 +24,9 @@ export class Router {
     .then(html => {
       document.getElementById('app').innerHTML = html;
     });
-
+    
+    document.querySelector('nav a.active').classList.remove('active');
+    document.querySelector(`nav a:nth-child(${this.routes[pathname][1]})`).classList.add('active');
     document.querySelector('body').style.backgroundImage = `url(assets/img/mountains-universe-${this.routes[pathname][1]}.png)`;
-
-    let body = document.querySelector('body');
-    console.log(body, this.routes[pathname][1]);
   }
 }
