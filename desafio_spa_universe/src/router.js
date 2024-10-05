@@ -10,7 +10,8 @@ export class Router {
     
     event = event || window.event;
     event.preventDefault();
-  
+    
+    //troca a url e adiciona ao historico de navegação
     window.history.pushState({}, '', event.target.href)
     this.handle();
   }
