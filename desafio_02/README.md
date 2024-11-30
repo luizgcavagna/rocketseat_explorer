@@ -1,8 +1,8 @@
-# Mentoria - Formulário de Agendamento
+# Mentorship - Scheduling Form
 
-## Descrição
-Este projeto consiste em um formulário HTML para agendamento de mentorias. O formulário coleta informações pessoais do usuário, nome do mentor e horários disponíveis para as sessões. O design responsivo é garantido pelo CSS, proporcionando uma experiência de usuário consistente em diferentes dispositivos.
+## Description
+This project is an HTML form designed for scheduling mentorship sessions. The form collects the user's personal information, the mentor's name, and available time slots for the sessions. The responsive design, ensured by CSS, provides a consistent user experience across different devices.
 
-## Tecnologias Utilizadas
-* **HTML5:** Estrutura básica da página e dos elementos do formulário.
-* **CSS3:** Estilização visual da página, incluindo layout, cores e tipografia.
+## Technologies Used
+* **HTML5:** The basic structure of the page and form elements.
+* **CSS3:** Visual styling of the page, including layout, colors, and typography.
